@@ -1,6 +1,6 @@
 const form = document.getElementById("form");
 const input = document.getElementById("input");
-const ul = document.getElementById("ul");
+const ol = document.getElementById("ol");
 
 const todoList = JSON.parse(localStorage.getItem("todoList"));
 
@@ -42,7 +42,7 @@ function add(todo) {
             saveData();
         });
 
-        ul.appendChild(li);
+        ol.appendChild(li);
         input.value = "";
         saveData();
     }
